@@ -1,0 +1,44 @@
+/**
+* FORMS
+*/
+.form {
+    width: 96%;
+    padding: 2% 2% 5px;
+    background-color: @gray;
+    float: left;
+}
+.form.no-br .cf-desc { font-size: 0.8em; padding-left: 21%; font-style: italic; line-height: 1.4; color: @light-dark; }
+.form.no-br .cf-desc a { font-size: 1em; text-decoration: underline; }
+.form fieldset {
+    border: none;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: @paper;
+    margin: 0;
+    padding: 20px 0 0 0;
+    width: 100%;
+}
+.form fieldset p { margin-bottom: 15px; }
+.form input[type="text"],
+.form input[type="password"] { 
+    width: 96%; 
+    border: 0; 
+    padding: 0 2%; 
+    height: 30px; 
+    margin-top: 5px; 
+}
+.no-br input[type="text"],
+.no-br input[type="password"],
+.no-br textarea { width: 75% }
+.form label {
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 10px;
+}
+.form em { color: @light-dark; }
+.form textarea { height: 180px; border: 1px solid @paper; }
+.form .buttonbar { margin: 30px 0 10px; text-align: right; border-top: 1px solid @paper; padding-top: 10px; }
+.form .buttonbar span { margin-left: 10px; }
+
+.extend-add { margin-top: 30px; }

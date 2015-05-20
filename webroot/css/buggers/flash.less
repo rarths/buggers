@@ -1,0 +1,48 @@
+/* SPARKLES FLASH MESSAGE CONTAINER */
+div.top-flash {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	text-align: center;
+	text-transform: uppercase;
+	width: 1012px;
+	margin: 0 auto;
+}
+div.top-flash span p {
+	border: 10px solid;
+	border-top: 0;
+	padding: 15px 0;
+	margin-bottom: 10px;
+	background-color: @gray;
+	color: @light-dark;
+	position: relative;
+	font-weight: 200;
+}
+
+/* FLASH MESSAGE COLORS */
+div.top-flash span.error p {
+	border-color: @red;
+}
+div.top-flash span.success p {
+	border-color: #4bb24b;
+}
+div.top-flash span.notice p {
+	border-color: #72d6e8;
+}
+
+/* FLASH MESSAGE 5S GONE ANIMATION IE 10+ SUPPORT */
+div.top-flash {
+    -moz-animation: topflash 0s ease-in 5s forwards; /* Firefox */
+    -webkit-animation: topflash 0s ease-in 5s forwards; /* Safari and Chrome */
+    -o-animation: topflash 0s ease-in 5s forwards; /* Opera */
+    animation: topflash 0s ease-in 5s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@keyframes topflash {
+    to { top: -100%; }
+}
+@-webkit-keyframes topflash {
+    to { top: -100%; }
+}

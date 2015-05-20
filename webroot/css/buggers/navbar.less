@@ -1,0 +1,65 @@
+#navbar { 
+  background-color: @paper;
+  width: 100%; 
+  display: inline-block;
+  border-bottom: 1px solid @paper-shadow;
+}
+
+.navbar li {
+  float: left;
+  text-align: center; 
+  color: @light-dark;
+  padding: 0 18px;
+}
+
+li.right-panel {
+  float: right;
+}
+
+.navbar a {
+  display: block;
+  padding: 10px 0;
+  color: inherit;
+  white-space: nowrap;
+  text-transform: uppercase; 
+  text-align: center;
+}
+
+.navbar p { 
+  text-transform: uppercase; 
+  text-align: center; 
+}
+
+.navbar ul {
+  list-style: none; 
+  margin: 0; 
+  padding: 0;
+  width: 100%;
+}
+
+.navbar ul ul {
+  background-color: @dark;
+  position: absolute; 
+  left: -9999px; 
+  z-index: 2;
+}
+
+.navbar li li {
+  width: 100%;
+}
+
+.navbar li:hover ul {
+  left: 0;
+}
+ 
+.navbar li:hover, .navbar li li:hover, .navbar li.selected, .navbar li.selected-parent {
+  color: @dark;
+}
+
+.navbar .users {
+  .clearfix();
+  margin-bottom: 30px;
+}
+.navbar.users li {
+    width: 20%; 
+}
