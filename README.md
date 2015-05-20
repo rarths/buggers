@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Anax-MVC
 =========
 
@@ -158,3 +159,7 @@ v1.0.0 (2013-06-28)
  .  
 ..:  Copyright (c) 2013 - 2014 Mikael Roos, me@mikaelroos.se
 ```
+=======
+# buggers
+Project for BTH PHPMVC course
+>>>>>>> c1a5c494d69decb3f863b0fdae6f7778f3d2cabc
